@@ -2,7 +2,7 @@ services:
   - type: web
     name: vera-bot
     runtime: python
-    plan: starter          # always-on; free tier sleeps and would wipe in-memory state
+    plan: free          # always-on; free tier sleeps and would wipe in-memory state
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn bot:app --host 0.0.0.0 --port $PORT --workers 1
     healthCheckPath: /v1/healthz
