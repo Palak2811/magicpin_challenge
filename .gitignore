@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.env
+*.zip
+# challenge materials stay local; only the dataset seeds + generator are needed for tests
+challenge/*
+!challenge/dataset/
+challenge/dataset/expanded/
+magicpin-ai-challenge/*
+!magicpin-ai-challenge/dataset/
+magicpin-ai-challenge/dataset/expanded/
+magicpin-ai-challenge/dataset/__pycache__/
